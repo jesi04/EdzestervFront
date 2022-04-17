@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;
+  }
+
+  
 body{
     background-color: #272939;
     color: white;
@@ -6,3 +18,14 @@ body{
 #bemutatkozas{
     text-align: center;
 }
+.logo{
+    font-weight: bolder;
+    color:white;
+    font-size: 3rem;
+
+    
+  }
+span{
+    color:red;
+  }
+  
