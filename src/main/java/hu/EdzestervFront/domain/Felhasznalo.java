@@ -20,6 +20,17 @@ public class Felhasznalo {
         this.megjegyzes = megjegyzes;
     }
 
+    public Felhasznalo(int id, String email, String nev) {
+        this.id = id;
+        this.email = email;
+        this.nev = nev;
+    }
+
+    public Felhasznalo(int id, String email) {
+        this.id = id;
+        this.email = email;
+    }
+
     public Felhasznalo() {
     }
 
