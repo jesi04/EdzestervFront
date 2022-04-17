@@ -1,0 +1,15 @@
+hu\EdzestervFront\services\CelService.class
+hu\EdzestervFront\services\FeladatService.class
+hu\EdzestervFront\domain\JavasoltEdzes.class
+hu\EdzestervFront\domain\Felhasznalo.class
+hu\EdzestervFront\services\FelhasznaloService.class
+hu\EdzestervFront\services\JavasoltEdzesService.class
+hu\EdzestervFront\domain\Bemutato.class
+hu\EdzestervFront\services\BemutatoService.class
+hu\EdzestervFront\EdzestervFrontApplication.class
+hu\EdzestervFront\config\RestConfig.class
+hu\EdzestervFront\domain\Cel.class
+hu\EdzestervFront\controllers\AdminController.class
+hu\EdzestervFront\domain\Feladat.class
+hu\EdzestervFront\controllers\MainController.class
+hu\EdzestervFront\config\SecurityConfig.class
