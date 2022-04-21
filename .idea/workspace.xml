@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="Dizájn és index html módosítása.">
+    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="SecurityConfig, style, index és nav html módosítások.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admincel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admincel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/bemutato.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/bemutato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/edzesterv.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edzesterv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/feladat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/feladat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/felhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/felhasznalo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/javasolt.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/javasolt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updatecel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updatecel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updatefelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updatefelhasznalo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650193474645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SecurityConfig, style, index és nav html módosítások.">
+      <created>1650224767393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650224767393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -138,6 +133,7 @@
     <MESSAGE value="oldalakra kilistázás az adatbázisból gettel" />
     <MESSAGE value="nagy commit mert sok elmaradt" />
     <MESSAGE value="Dizájn és index html módosítása." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dizájn és index html módosítása." />
+    <MESSAGE value="SecurityConfig, style, index és nav html módosítások." />
+    <option name="LAST_COMMIT_MESSAGE" value="SecurityConfig, style, index és nav html módosítások." />
   </component>
 </project>
