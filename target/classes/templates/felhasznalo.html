@@ -12,19 +12,20 @@
 </head>
 <body>
 <header class="container">
+    <a href="/" class="logo"> <span>BMC</span> </a>
     <nav th:replace="nav::navbar"></nav>
 </header>
 <main class="container">
     <h3>Felhasználók listája</h3>
     <div class="row">
-        <div th:each="felhasznalo : ${felhasznalok}" class="card col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
-            <div class="card-body">
+        <div th:each="felhasznalo : ${felhasznalok}" class=" col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
+
                 <h5 class="card-title" th:text="'Név: '+${felhasznalo.nev}">Felhasználó neve</h5>
                 <p class="card-text" th:text="'Email címe: '+${felhasznalo.email}">Email címe</p>
                 <p class="card-text" th:text="'Születési dátuma: '+${felhasznalo.szuldat}">Születési dátuma</p>
                 <p class="card-text" th:text="'Magassága: '+${felhasznalo.magassag}">Magassága</p>
 
-            </div>
+
         </div>
     </div>
 

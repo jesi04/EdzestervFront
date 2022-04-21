@@ -12,12 +12,13 @@
 </head>
 <body>
 <header class="container">
+  <a href="/" class="logo"> <span>BMC</span> </a>
   <nav th:replace="nav::navbar"></nav>
 </header>
 <main class="container">
   <h3>Edzésterv</h3>
   <div class="row">
-    <div th:each="edzesterv : ${edzestervek}" class="card col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
+    <div th:each="edzesterv : ${edzestervek}" class="col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title" th:text="'Név: '+${edzesterv.nev}">Felhasználó neve</h5>
         <p class="card-text" th:text="'Feladat Neve: '+${edzesterv.feladatNev}">Feladat neve</p>
