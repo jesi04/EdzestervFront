@@ -18,17 +18,13 @@
 </header>
 <main class="container">
 
-    <p class="bg-success text-white" th:if="${status} == 201" th:text="' new felhasznalo is added'"></p>
-    <p class="bg-warning" th:if="${status} == 409" th:text="' id duplication'"></p>
-    <p class="bg-success text-white" th:if="${status} == 200" th:text="' the update was successful'"></p>
-    <p class="bg-danger text-white" th:if="${status} == 100" th:text="' felhasznalo is deleted'"></p>
+    <p class="bg-success text-white" th:if="${status} == 201" th:text="' Új felhasználó hozzáadva'"></p>
+    <p class="bg-warning" th:if="${status} == 409" th:text="' Ez az id már létezik'"></p>
+    <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikertelen frissítés'"></p>
+    <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Felhasználó törölve'"></p>
 
     <h4>Felhasználó hozzáadása</h4>
     <form method="POST" th:action="@{/addfelhasznalo}">
-        <div class="mb-3">
-            <label for="id" class="form-label">id</label>
-            <input type="number" min="1" class="form-control" id="id" name="id">
-        </div>
         <div class="mb-3">
             <label for="nev" class="form-label">Nev</label>
             <input type="text" class="form-control" id="nev" name="nev">
@@ -36,6 +32,18 @@
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="text" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="szuldat" class="form-label">Születési dátum</label>
+            <input type="text" class="form-control" id="szuldat" name="szuldat">
+        </div>
+        <div class="mb-3">
+            <label for="magassag" class="form-label">Magasság</label>
+            <input type="text" class="form-control" id="magassag" name="magassag">
+        </div>
+        <div class="mb-3">
+            <label for="megjegyzes" class="form-label">Megjegyzés</label>
+            <input type="text" class="form-control" id="megjegyzes" name="megjegyzes">
         </div>
         <button type="submit" class="btn btn-primary">Add</button>
     </form>
@@ -52,6 +60,9 @@
             <td th:text="${felhasznalo.id}"></td>
             <td th:text="${felhasznalo.nev}"></td>
             <td th:text="${felhasznalo.email}"></td>
+            <td th:text="${felhasznalo.szuldat}"></td>
+            <td th:text="${felhasznalo.magassag}"></td>
+            <td th:text="${felhasznalo.megjegyzes}"></td>
             <td>
                 <form method="post" th:action="@{/updatefelhasznalo}">
                     <input type="hidden" name="id" th:value="${felhasznalo.id}">

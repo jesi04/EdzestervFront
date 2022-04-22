@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" th:href="@{/css/style.css}">
 
-  <title>Adminisztráció - cél hozzáadása</title>
+  <title>Adminisztráció - feladat hozzáadása</title>
 </head>
 <body>
 <header class="container">
@@ -18,49 +18,63 @@
 </header>
 <main class="container">
 
-  <p class="bg-success text-white" th:if="${status} == 201" th:text="' Cél hozzáadva'"></p>
+  <p class="bg-success text-white" th:if="${status} == 201" th:text="' Új feladat hozzáadva'"></p>
   <p class="bg-warning" th:if="${status} == 409" th:text="' Ez az id már létezik'"></p>
   <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikertelen frissítés'"></p>
-  <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Cél törölve'"></p>
+  <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Feladat törölve'"></p>
 
-  <h4>Cél hozzáadása</h4>
-  <form method="POST" th:action="@{/addcel}">
+  <h4>Feladat hozzáadása</h4>
+  <form method="POST" th:action="@{/addfeladat}">
     <div class="mb-3">
-      <label for="id" class="form-label">id</label>
-      <input type="number" min="1" class="form-control" id="id" name="id">
+      <label for="nev" class="form-label">Név</label>
+      <input type="number" class="form-control" id="nev" name="nev">
     </div>
     <div class="mb-3">
-      <label for="elerendoSuly" class="form-label">elerendoSuly</label>
-      <input type="number" class="form-control" id="elerendoSuly" name="elerendoSuly">
+      <label for="elegetettKcal" class="form-label">Elégetett Kcal</label>
+      <input type="text" class="form-control" id="elegetettKcal" name="elegetettKcal">
     </div>
     <div class="mb-3">
-      <label for="megjegyzes" class="form-label">megjegyzes</label>
+      <label for="leiras" class="form-label">Leírás</label>
+      <input type="text" class="form-control" id="leiras" name="leiras">
+    </div>
+    <div class="mb-3">
+      <label for="megjegyzes" class="form-label">Megjegyzes</label>
       <input type="text" class="form-control" id="megjegyzes" name="megjegyzes">
+    </div>
+    <div class="mb-3">
+      <label for="izomcsoport" class="form-label">Izomcsoport</label>
+      <input type="text" class="form-control" id="izomcsoport" name="izomcsoport">
     </div>
     <button type="submit" class="btn btn-primary">Add</button>
   </form>
 
-  <h4 class="mt-4">Cel (sorted by name)</h4>
+  <h4 class="mt-4">Feladat (sorted by name)</h4>
   <table class="table table-hover table-striped table-secondary">
     <tr>
       <th>id</th>
-      <th>Elérendő súly</th>
-      <th>Megjegyzés</th>
+      <th>Név</th>
+      <th>Elégetett Kcal</th>
+      <th>Leírás</th>
+      <th>Megjegyzes</th>
+      <th>Izomcsoport</th>
       <th colspan="2" class="text-center">manage</th>
     </tr>
-    <tr th:each="cel : ${celok}">
-      <td th:text="${cel.id}"></td>
-      <td th:text="${cel.elerendoSuly}"></td>
-      <td th:text="${cel.megjegyzes}"></td>
+    <tr th:each="feladat : ${feladatok}">
+      <td th:text="${feladat.id}"></td>
+      <td th:text="${feladat.nev}"></td>
+      <td th:text="${feladat.elegetettKcal}"></td>
+      <td th:text="${feladat.leiras}"></td>
+      <td th:text="${feladat.megjegyzes}"></td>
+      <td th:text="${feladat.izomcsoport}"></td>
       <td>
-        <form method="post" th:action="@{/updatecel}">
-          <input type="hidden" name="id" th:value="${cel.id}">
-          <button class="btn btn-warning">Swap elerendoSuly</button>
+        <form method="post" th:action="@{/updatefeladat}">
+          <input type="hidden" name="id" th:value="${feladat.id}">
+          <button class="btn btn-warning">Swap leiras</button>
         </form>
       </td>
       <td>
-        <form method="post" th:action="@{/delete-cel}">
-          <input type="hidden" name="id" th:value="${cel.id}">
+        <form method="post" th:action="@{/delete-feladat}">
+          <input type="hidden" name="id" th:value="${feladat.id}">
           <button class="btn btn-danger">Delete</button>
         </form>
       </td>

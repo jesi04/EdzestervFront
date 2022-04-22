@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="SecurityConfig, style, index és nav html módosítások.">
+    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="kisebb helyesírási javítások">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminfeladat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Feladat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Feladat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Felhasznalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Felhasznalo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/CelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/CelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FeladatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FeladatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FelhasznaloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FelhasznaloService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admincel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admincel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminfelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminfelhasznalo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feladat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feladat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,7 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EdzestervAPI-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
@@ -109,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650224767393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="kisebb helyesírási javítások">
+      <created>1650567462953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650567462953</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -131,6 +148,7 @@
     <MESSAGE value="nagy commit mert sok elmaradt" />
     <MESSAGE value="Dizájn és index html módosítása." />
     <MESSAGE value="SecurityConfig, style, index és nav html módosítások." />
-    <option name="LAST_COMMIT_MESSAGE" value="SecurityConfig, style, index és nav html módosítások." />
+    <MESSAGE value="kisebb helyesírási javítások" />
+    <option name="LAST_COMMIT_MESSAGE" value="kisebb helyesírási javítások" />
   </component>
 </project>

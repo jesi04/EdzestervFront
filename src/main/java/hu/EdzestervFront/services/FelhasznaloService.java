@@ -14,6 +14,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -36,9 +37,9 @@ public class FelhasznaloService {
         return felhasznalo;
     }
 
-    public int addFelhasznalo(int id, String nev, String email) {
+    public int addFelhasznalo(String nev, String email, Date szuldat, int magassag, String megjegyzes) {
         String url = API_URL+"/felhasznalok";
-        Felhasznalo felhasznalo = new Felhasznalo(id, nev, email);
+        Felhasznalo felhasznalo = new Felhasznalo(nev, email, szuldat, magassag, megjegyzes);
         HttpEntity<Felhasznalo> requestEntity = new HttpEntity<>(felhasznalo);
         try {
             ResponseEntity<Felhasznalo> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, Felhasznalo.class);

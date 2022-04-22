@@ -1,7 +1,6 @@
 package hu.EdzestervFront.services;
 
 import hu.EdzestervFront.domain.Cel;
-import hu.EdzestervFront.domain.Felhasznalo;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.beans.factory.annotation.Autowired;

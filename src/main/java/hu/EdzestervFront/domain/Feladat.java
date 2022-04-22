@@ -7,13 +7,28 @@ public class Feladat {
     private int elegetettKcal;
     private String leiras;
     private String megjegyzes;
+    private String izomcsoport;
 
-    public Feladat(int id, String nev, int elegetettKcal, String leiras, String megjegyzes) {
+    public Feladat(int id, String nev, int elegetettKcal, String leiras, String megjegyzes, String izomcsoport) {
         this.id = id;
         this.nev = nev;
         this.elegetettKcal = elegetettKcal;
         this.leiras = leiras;
         this.megjegyzes = megjegyzes;
+        this.izomcsoport = izomcsoport;
+
+    }
+
+    public Feladat(String nev, int elegetettKcal, String leiras, String megjegyzes) {
+        this.nev = nev;
+        this.elegetettKcal = elegetettKcal;
+        this.leiras = leiras;
+        this.megjegyzes = megjegyzes;
+    }
+
+    public Feladat(int id, String leiras) {
+        this.id = id;
+        this.leiras = leiras;
     }
 
     public Feladat() {
@@ -57,5 +72,13 @@ public class Feladat {
 
     public void setMegjegyzes(String megjegyzes) {
         this.megjegyzes = megjegyzes;
+    }
+
+    public String getIzomcsoport() {
+        return izomcsoport;
+    }
+
+    public void setIzomcsoport(String izomcsoport) {
+        this.izomcsoport = izomcsoport;
     }
 }

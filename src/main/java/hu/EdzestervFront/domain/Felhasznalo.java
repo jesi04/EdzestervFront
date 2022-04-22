@@ -20,6 +20,14 @@ public class Felhasznalo {
         this.megjegyzes = megjegyzes;
     }
 
+    public Felhasznalo(String email, String nev, Date szuldat, int magassag, String megjegyzes) {
+        this.email = email;
+        this.nev = nev;
+        this.szuldat = szuldat;
+        this.magassag = magassag;
+        this.megjegyzes = megjegyzes;
+    }
+
     public Felhasznalo(int id, String email, String nev) {
         this.id = id;
         this.email = email;
