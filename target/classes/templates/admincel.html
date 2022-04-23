@@ -18,10 +18,10 @@
 </header>
 <main class="container">
 
-  <p class="bg-success text-white" th:if="${status} == 201" th:text="' new cel is added'"></p>
-  <p class="bg-warning" th:if="${status} == 409" th:text="' id duplication'"></p>
-  <p class="bg-success text-white" th:if="${status} == 200" th:text="' the update was successful'"></p>
-  <p class="bg-danger text-white" th:if="${status} == 100" th:text="' cel is deleted'"></p>
+  <p class="bg-success text-white" th:if="${status} == 201" th:text="' Cél hozzáadva'"></p>
+  <p class="bg-warning" th:if="${status} == 409" th:text="' Ez az id már létezik'"></p>
+  <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikertelen frissítés'"></p>
+  <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Cél törölve'"></p>
 
   <h4>Cél hozzáadása</h4>
   <form method="POST" th:action="@{/addcel}">

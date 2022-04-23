@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // de akkor a log out nem kér megerősítést és azonnal kilép
         // ugyanott lentebb írtak egy jobb megoldást: az űrlapban az action attribútum ez legyen: @{url}
         http.authorizeRequests()
-                .antMatchers("/", "/c-felhasznalok","/c-edzestervek", "/c-feladatok", "/c-celok", "/c-bemutatok", "/c-javasoltak", "/css/**").permitAll()
+                .antMatchers("/", "/c-felhasznalok","/c-edzestervek", "/c-feladatok", "/c-celok", "/c-bemutatok", "/c-javasoltak", "/c-edzesnapok/**","/c-edzesnapfeladatok/**", "/css/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()

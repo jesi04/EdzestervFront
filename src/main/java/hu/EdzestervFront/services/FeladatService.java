@@ -1,7 +1,6 @@
 package hu.EdzestervFront.services;
 
-import hu.EdzestervFront.domain.Feladat;
-import hu.EdzestervFront.domain.Felhasznalo;
+import hu.EdzestervFront.domain.*;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,5 +68,11 @@ public class FeladatService {
         restTemplate.delete(url, id);
         System.out.println("return 100");
         return 100;
+    }
+
+    public List<EdzesnapFeladat> getEdzesnapFeladatok(int id) {
+        String url = API_URL+"/edzesnapfeladatok/{id}";
+        EdzesnapFeladat[] edzesnapFeladatok = restTemplate.getForObject(url, EdzesnapFeladat[].class, id);
+        return Arrays.asList(edzesnapFeladatok);
     }
 }

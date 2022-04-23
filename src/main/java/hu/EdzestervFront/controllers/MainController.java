@@ -1,11 +1,14 @@
 package hu.EdzestervFront.controllers;
 
+import hu.EdzestervFront.domain.Edzesnap;
+import hu.EdzestervFront.domain.EdzesnapFeladat;
 import hu.EdzestervFront.domain.Edzesterv;
 import hu.EdzestervFront.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -47,6 +50,34 @@ public class MainController {
         model.addAttribute("activemenu", 3);
         return "edzesterv";
     }
+
+    @GetMapping("c-edzesnapok/{id}")
+    public String getEdzesnapok(@PathVariable("id") int felhasznaloid,
+                               Model model){
+        List<Edzesnap> edzesnapok = felhasznaloService.getEdzesnapok(felhasznaloid);
+        model.addAttribute("edzesnapok", edzesnapok);
+        model.addAttribute("activemenu", 3);
+        return "edzesnap";
+    }
+
+
+    @GetMapping("c-edzesnapfeladatok/{id}")
+    public String getEdzesnapFeladatok(@PathVariable("id") int edzesnapFeladatId,
+                               Model model){
+        List<EdzesnapFeladat> edzesnapFeladatok = feladatService.getEdzesnapFeladatok(edzesnapFeladatId);
+        model.addAttribute("edzesnapfeladatok", edzesnapFeladatok);
+        model.addAttribute("activemenu", 3);
+        return "edzesnapfeladat";
+    }
+
+    /*@GetMapping("c-edzesnapfeladatok/{id}")
+    public String getEdzesnapFeladatok(@PathVariable("id") int edzesnapFeladatId,
+                                Model model){
+        List<EdzesnapFeladat> edzesnapfeladatok = feladatService.getEdzesnapFeladatok(edzesnapFeladatId);
+        model.addAttribute("edzesnapfeladatok", edzesnapfeladatok);
+        model.addAttribute("activemenu", 3);
+        return "edzesnapfeladat";
+    }*/
 
     @GetMapping("/c-feladatok")
     public String feladatok(Model model){

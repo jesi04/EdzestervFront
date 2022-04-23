@@ -21,10 +21,9 @@
     <div th:each="edzesterv : ${edzestervek}" class="col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title" th:text="'Név: '+${edzesterv.nev}">Felhasználó neve</h5>
-        <p class="card-text" th:text="'Feladat Neve: '+${edzesterv.feladatNev}">Feladat neve</p>
-        <p class="card-text" th:text="'Feladat leírása: '+${edzesterv.feladatLeiras}">Feladat leírása</p>
         <p class="card-text" th:text="'Elérendő súly: '+${edzesterv.elerendoSuly}">Elérendő súly</p>
-
+        <p class="card-text" th:text="'Cél: '+${edzesterv.celMegjegyzes}">Cél</p>
+        <a href="#" th:href="'/c-edzesnapok/'+${edzesterv.id}" class="btn btn-dark">Edzésnapok</a>
       </div>
     </div>
   </div>
