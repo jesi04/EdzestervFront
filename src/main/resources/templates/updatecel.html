@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<html lang="hu" xmlns:th="http:www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,20 +18,20 @@
 </header>
 <main class="container">
 
-    <h4>A felhasználó célját ki lehet cserélni</h4>
+    <h4>A cél elérendő súlyát lehet módosítani</h4>
     <p>Name:
-        <label th:text="${cel.elerendoSuly}"></label>
+        <label th:text="${cel.id}"></label>
     </p>
-    <form  method="POST" th:action="@{/update-cel}" class="row row-cols-lg-auto g-3 align-items-center">
+    <form  method="POST" th:action="@{/update-elerendoSuly}" class="row row-cols-lg-auto g-3 align-items-center">
         <!--            <input type="hidden" name="_method" value="patch">-->
         <input type="hidden" name="id" th:value="${cel.id}">
         <div class="col-12">
             <label for="elerendoSuly" class="form-label">elerendoSuly</label>
-            <input type="text" class="form-control" id="elerendoSuly" name="elerendoSuly" aria-describedby="elerendoSuly" th:value="${cel.elerendoSuly}">
+            <input type="number" class="form-control" id="elerendoSuly" elerendoSuly="email" aria-describedby="elerendoSuly" th:value="${cel.elerendoSuly}">
         </div>
         <div class="col-12">
             <br>
-            <button type="submit" class="btn btn-warning">Update</button>
+            <button type="submit" class="btn btn-warning">Módosítás</button>
         </div>
     </form>
 </main>

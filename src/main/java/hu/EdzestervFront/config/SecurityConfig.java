@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureAuth(AuthenticationManagerBuilder auth){
         try {
             auth.inMemoryAuthentication()
-                    .withUser("jacky").password("$2a$10$DjI.P92vFenHcKMQBb1nKeHqmOnsL/y/6vX4Dcr4Nxl0JO5UaV5xG").roles("USER", "ADMIN")
+                    .withUser("admin").password("$2a$10$DjI.P92vFenHcKMQBb1nKeHqmOnsL/y/6vX4Dcr4Nxl0JO5UaV5xG").roles("USER", "ADMIN")
                     .and()
                     .withUser("jane").password("{noop}jklé").roles("USER");
         } catch (Exception ex) {
