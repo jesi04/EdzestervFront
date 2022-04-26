@@ -18,12 +18,12 @@
 <main class="container">
     <h3>Célok listája</h3>
     <div class="row">
-        <div th:each="cel : ${celok}" class="col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
+        <div th:each="cel : ${celok}" class="card col-4 col-sm-3 col-md-2 m-2" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title" th:text="'Cél: '+${cel.megjegyzes}">Cél</h5>
                 <p class="card-text" th:text="'Elérendő súly: '+${cel.elerendoSuly}">Elérendő súly</p>
-                <p class="card-text" th:text="'Kezdete: '+${cel.kezdes}">Kezdete</p>
-                <p class="card-text" th:text="'Vége: '+${cel.vege}">Vége</p>
+                <p class="card-text" th:text="'Kezdete: '+${#dates.format(cel.kezdes,'yyyy-MM-dd')}">Kezdete</p>
+                <p class="card-text" th:text="'Vége: '+${#dates.format(cel.vege,'yyyy-MM-dd')}">Vége</p>
 
             </div>
         </div>

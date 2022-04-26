@@ -33,13 +33,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // http.csrf().disable();
-        // mert a POST új horgász 403-as hibát dob
-        // https://stackoverflow.com/questions/50486314/how-to-solve-403-error-in-spring-boot-post-request
-        // de akkor a log out nem kér megerősítést és azonnal kilép
-        // ugyanott lentebb írtak egy jobb megoldást: az űrlapban az action attribútum ez legyen: @{url}
+
         http.authorizeRequests()
-                .antMatchers("/", "/c-felhasznalok","/c-edzestervek", "/c-feladatok", "/c-celok", "/c-bemutatok", "/c-javasoltak", "/c-edzesnapok/**","/c-edzesnapfeladatok/**", "/css/**").permitAll()
+                .antMatchers("/","/c-feladatleirasok/**", "/c-felhasznalok","/c-edzestervek", "/c-feladatok", "/c-celok", "/c-bemutatok", "/c-javasoltak", "/c-edzesnapok/**","/c-edzesnapfeladatok/**", "/css/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()

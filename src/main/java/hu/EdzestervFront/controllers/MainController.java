@@ -70,20 +70,18 @@ public class MainController {
         return "edzesnapfeladat";
     }
 
-    /*@GetMapping("c-edzesnapfeladatok/{id}")
-    public String getEdzesnapFeladatok(@PathVariable("id") int edzesnapFeladatId,
-                                Model model){
-        List<EdzesnapFeladat> edzesnapfeladatok = feladatService.getEdzesnapFeladatok(edzesnapFeladatId);
-        model.addAttribute("edzesnapfeladatok", edzesnapfeladatok);
-        model.addAttribute("activemenu", 3);
-        return "edzesnapfeladat";
-    }*/
 
     @GetMapping("/c-feladatok")
     public String feladatok(Model model){
         model.addAttribute("feladatok", feladatService.getFeladatok());
         model.addAttribute("activemenu", 4);
         return "feladat";
+    }
+    @GetMapping("/c-feladatleirasok/{id}")
+    public String feladatleirasok(Model model){
+        model.addAttribute("feladatleirasok", feladatService.getFeladatok());
+        model.addAttribute("activemenu", 4);
+        return "feladatleiras";
     }
 
     @GetMapping("/c-celok")
