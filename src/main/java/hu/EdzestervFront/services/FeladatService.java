@@ -51,9 +51,6 @@ public class FeladatService {
     public int updateFeladat(int id, String leiras) {
         String url = API_URL+"/feladatok/{id}";
         Feladat feladat = new Feladat(id, leiras);
-
-        // az alábbi két sorral állítjuk be a restTemplate példányt arra, hogy tudja kezelni a patch kérést
-        // ezért kellett a httpclient dependency a pom.xml-be
         CloseableHttpClient client = HttpClientBuilder.create().build();
         restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(client));
 
@@ -70,9 +67,4 @@ public class FeladatService {
         return 100;
     }
 
-    public List<EdzesnapFeladat> getEdzesnapFeladatok(int id) {
-        String url = API_URL+"/edzesnapfeladatok/{id}";
-        EdzesnapFeladat[] edzesnapFeladatok = restTemplate.getForObject(url, EdzesnapFeladat[].class, id);
-        return Arrays.asList(edzesnapFeladatok);
-    }
 }

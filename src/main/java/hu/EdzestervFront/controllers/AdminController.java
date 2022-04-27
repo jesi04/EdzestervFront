@@ -98,11 +98,11 @@ public class AdminController {
         return "updatecel";
     }
 
-    @PostMapping("/update-elerendoSuly") // elerendoSulyt cserél
+    @PostMapping("/update-elerendo_suly") // elerendo_sulyt cserél
     public String updateCel(@RequestParam("id") int id,
-                               @RequestParam("megjegyzes") int  elerendoSuly,
+                               @RequestParam("megjegyzes") int  elerendo_suly,
                                Model model){
-        int status = celService.updateCel(id, elerendoSuly);
+        int status = celService.updateCel(id, elerendo_suly);
         model.addAttribute("status", status);
         model.addAttribute("celok", celService.getCelok());
         return "admincel";
@@ -145,7 +145,7 @@ public class AdminController {
         return "updatefeladat";
     }
 
-    @PostMapping("/update-leiras") // elerendoSulyt cserél
+    @PostMapping("/update-leiras") // leirast cserél
     public String updateFeladat(@RequestParam("id") int id,
                             @RequestParam("leiras") String  leiras,
                             Model model){

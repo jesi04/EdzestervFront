@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="edzésnap, edzésnapfeladat megcsinálása , még napokra kell osztani">
+    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="Feladatok sikeres ketté bontása, már csak egyet ír ki">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/services/FeladatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/services/FeladatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Edzesnap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/EdzesnapFeladat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/domain/Edzesterv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/CelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/CelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FeladatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FeladatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FelhasznaloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/EdzestervFront/services/FelhasznaloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edzesnap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edzesnapfeladat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edzesterv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/controllers/MainController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -108,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650224767393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feladatok sikeres ketté bontása, már csak egyet ír ki">
+      <created>1651065611685</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651065611685</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -130,6 +149,7 @@
     <MESSAGE value="nagy commit mert sok elmaradt" />
     <MESSAGE value="Dizájn és index html módosítása." />
     <MESSAGE value="SecurityConfig, style, index és nav html módosítások." />
-    <option name="LAST_COMMIT_MESSAGE" value="SecurityConfig, style, index és nav html módosítások." />
+    <MESSAGE value="Feladatok sikeres ketté bontása, már csak egyet ír ki" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feladatok sikeres ketté bontása, már csak egyet ír ki" />
   </component>
 </project>

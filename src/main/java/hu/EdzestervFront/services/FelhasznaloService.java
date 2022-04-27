@@ -1,7 +1,5 @@
 package hu.EdzestervFront.services;
 
-import hu.EdzestervFront.domain.Edzesnap;
-import hu.EdzestervFront.domain.Edzesterv;
 import hu.EdzestervFront.domain.Felhasznalo;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -54,9 +52,6 @@ public class FelhasznaloService {
     public int updateFelhasznalo(int id, String email) {
         String url = API_URL+"/felhasznalok/{id}";
         Felhasznalo felhasznalo = new Felhasznalo(id, email);
-
-        // az alábbi két sorral állítjuk be a restTemplate példányt arra, hogy tudja kezelni a patch kérést
-        // ezért kellett a httpclient dependency a pom.xml-be
         CloseableHttpClient client = HttpClientBuilder.create().build();
         restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(client));
 
@@ -73,17 +68,7 @@ public class FelhasznaloService {
         return 100;
     }
 
-    public List<Edzesterv> getEdzestervek() {
-        String url = API_URL+"/edzestervek";
-        Edzesterv[] edzesterv = restTemplate.getForObject(url, Edzesterv[].class);
-        return Arrays.asList(edzesterv);
-    }
 
-    public List<Edzesnap> getEdzesnapok(int felhasznaloid) {
-        String url = API_URL+"/edzesnapok/{id}";
-        Edzesnap[] edzesnapok = restTemplate.getForObject(url, Edzesnap[].class, felhasznaloid);
-        return Arrays.asList(edzesnapok);
-    }
 
 
 

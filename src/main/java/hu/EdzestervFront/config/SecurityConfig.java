@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             auth.inMemoryAuthentication()
                     .withUser("admin").password("$2a$10$DjI.P92vFenHcKMQBb1nKeHqmOnsL/y/6vX4Dcr4Nxl0JO5UaV5xG").roles("USER", "ADMIN")
                     .and()
-                    .withUser("jane").password("{noop}jklé").roles("USER");
+                    .withUser("user").password("{noop}jklé").roles("USER");
         } catch (Exception ex) {
             System.out.println("ex in configureAuth(): "+ex.getMessage());
         }

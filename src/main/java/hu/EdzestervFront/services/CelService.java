@@ -50,9 +50,6 @@ public class CelService {
     public int updateCel(int id, int elerendoSuly) {
         String url = API_URL+"/celok/{id}";
         Cel cel = new Cel(id, elerendoSuly);
-
-        // az alábbi két sorral állítjuk be a restTemplate példányt arra, hogy tudja kezelni a patch kérést
-        // ezért kellett a httpclient dependency a pom.xml-be
         CloseableHttpClient client = HttpClientBuilder.create().build();
         restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory(client));
 
