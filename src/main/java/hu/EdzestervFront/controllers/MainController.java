@@ -78,8 +78,9 @@ public class MainController {
         return "feladat";
     }
     @GetMapping("/c-feladatleirasok/{id}")
-    public String feladatleirasok(Model model){
-        model.addAttribute("feladatleirasok", feladatService.getFeladatok());
+    public String feladatleirasok(@PathVariable("id") int id,
+            Model model){
+        model.addAttribute("feladatleirasok", feladatService.getFeladat(id));
         model.addAttribute("activemenu", 4);
         return "feladatleiras";
     }
