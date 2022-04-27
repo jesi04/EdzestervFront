@@ -18,16 +18,16 @@
 </header>
 <main class="container">
 
-    <h4>A cél elérendő súlyát lehet módosítani</h4>
-    <p>Cél:
-        <label th:text="${cel.megjegyzes}"></label>
+    <h4>A feladat leírását lehet módosítani</h4>
+    <p>Név:
+        <label th:text="${feladat.nev}"></label>
     </p>
-    <form  method="POST" th:action="@{/update-elerendo_suly}" class="row row-cols-lg-auto g-3 align-items-center">
+    <form  method="POST" th:action="@{/update-leiras}" class="row row-cols-lg-auto g-3 align-items-center">
         <!--            <input type="hidden" name="_method" value="patch">-->
-        <input type="hidden" name="id" th:value="${cel.id}">
+        <input type="hidden" name="id" th:value="${feladat.id}">
         <div class="col-12">
-            <label for="elerendo_suly" class="form-label">elerendoSuly</label>
-            <input type="number" class="form-control" id="elerendo_suly" name="elerendo_suly" aria-describedby="elerendo_suly" th:value="${cel.elerendo_suly}">
+            <label for="leiras" class="form-label">Leírás</label>
+            <input type="text" class="form-control" id="leiras" name="leiras" aria-describedby="leiras" th:value="${feladat.leiras}">
         </div>
         <div class="col-12">
             <br>

@@ -20,10 +20,10 @@
 
     <p class="bg-success text-white" th:if="${status} == 201" th:text="' Új felhasználó hozzáadva'"></p>
     <p class="bg-warning" th:if="${status} == 409" th:text="' Ez az id már létezik'"></p>
-    <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikertelen frissítés'"></p>
+    <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikeres frissítés'"></p>
     <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Felhasználó törölve'"></p>
 
-    <h4>Felhasználó hozzáadása</h4>
+    <h4>Felhasználó hozzáadása (fejlesztés alatt)</h4>
     <form method="POST" th:action="@{/addfelhasznalo}">
         <div class="mb-3">
             <label for="nev" class="form-label">Nev</label>
@@ -35,11 +35,11 @@
         </div>
         <div class="mb-3">
             <label for="szuldat" class="form-label">Születési dátum</label>
-            <input type="text" class="form-control" id="szuldat" name="szuldat">
+            <input type="date" class="form-control" id="szuldat" name="szuldat">
         </div>
         <div class="mb-3">
             <label for="magassag" class="form-label">Magasság</label>
-            <input type="text" class="form-control" id="magassag" name="magassag">
+            <input type="number" class="form-control" id="magassag" name="magassag">
         </div>
         <div class="mb-3">
             <label for="megjegyzes" class="form-label">Megjegyzés</label>
@@ -48,7 +48,7 @@
         <button type="submit" class="btn btn-primary">Add</button>
     </form>
 
-    <h4 class="mt-4">Felhasználók (sorted by name)</h4>
+    <h4 class="mt-4">Felhasználók</h4>
     <table class="table table-hover table-striped table-secondary">
         <tr>
             <th>id</th>

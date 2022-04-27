@@ -20,10 +20,10 @@
 
   <p class="bg-success text-white" th:if="${status} == 201" th:text="' Új feladat hozzáadva'"></p>
   <p class="bg-warning" th:if="${status} == 409" th:text="' Ez az id már létezik'"></p>
-  <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikertelen frissítés'"></p>
+  <p class="bg-success text-white" th:if="${status} == 200" th:text="' Sikeres frissítés'"></p>
   <p class="bg-danger text-white" th:if="${status} == 100" th:text="' Feladat törölve'"></p>
 
-  <h4>Feladat hozzáadása</h4>
+  <h4>Feladat hozzáadása (Fejlesztés alatt)</h4>
   <form method="POST" th:action="@{/addfeladat}">
     <div class="mb-3">
       <label for="nev" class="form-label">Név</label>
@@ -48,7 +48,7 @@
     <button type="submit" class="btn btn-primary">Add</button>
   </form>
 
-  <h4 class="mt-4">Feladat (sorted by name)</h4>
+  <h4 class="mt-4">Feladatok</h4>
   <table class="table table-hover table-striped table-secondary">
     <tr>
       <th>id</th>

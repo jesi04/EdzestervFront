@@ -9,11 +9,7 @@
                     <a th:unless="${activemenu}==2" class="nav-link" aria-current="page" href="felhasznalo.html" th:href="'/c-felhasznalok'">Felhasználók</a>
                 </li>
                 <li class="nav-item">
-                    <a th:if="${activemenu}==3" class="nav-link active" aria-current="page" href="edzesterv.html" th:href="'/c-edzestervek'">Edzésterv</a>
-                    <a th:unless="${activemenu}==3" class="nav-link" aria-current="page" href="edzesterv.html" th:href="'/c-edzestervek'">Edzésterv</a>
-                </li>
-                <li class="nav-item">
-                    <a th:if="${activemenu}==4" class="nav-link active" aria-current="page" href="feladat.html" th:href="'/c-feladatok'">Feladatok</a>
+                    <a th:if="${activemenu}==3" class="nav-link active" aria-current="page" href="feladat.html" th:href="'/c-feladatok'">Feladatok</a>
                     <a th:unless="${activemenu}==4" class="nav-link" aria-current="page" href="feladat.html" th:href="'/c-feladatok'">Feladatok</a>
                 </li>
                 <li class="nav-item">
@@ -21,8 +17,8 @@
                     <a th:unless="${activemenu}==5" class="nav-link" aria-current="page" href="cel.html" th:href="'/c-celok'">Célok</a>
                 </li>
                 <li class="nav-item">
-                    <a th:if="${activemenu}==7" class="nav-link active" aria-current="page" href="javasolt.html" th:href="'/c-javasoltak'">Javasolt Edzések</a>
-                    <a th:unless="${activemenu}==7" class="nav-link" aria-current="page" href="javasolt.html" th:href="'/c-javasoltak'">Javasolt Edzések</a>
+                    <a th:if="${activemenu}==6" class="nav-link active" aria-current="page" href="javasolt.html" th:href="'/c-javasoltak'">Javasolt Edzések</a>
+                    <a th:unless="${activemenu}==6" class="nav-link" aria-current="page" href="javasolt.html" th:href="'/c-javasoltak'">Javasolt Edzések</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" target="_blank" href="admin.html" th:href="'/admin'">Adminisztráció</a>
