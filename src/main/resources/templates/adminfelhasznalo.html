@@ -60,7 +60,7 @@
             <td th:text="${felhasznalo.id}"></td>
             <td th:text="${felhasznalo.nev}"></td>
             <td th:text="${felhasznalo.email}"></td>
-            <td th:text="${felhasznalo.szuldat}"></td>
+            <td th:text="${#dates.format(felhasznalo.szuldat,'yyyy-MM-dd')}"></td>
             <td th:text="${felhasznalo.magassag}"></td>
             <td th:text="${felhasznalo.megjegyzes}"></td>
             <td>

@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="html fájlok fölösleges commentjeinek törlése">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updatefeladat.html" afterDir="false" />
+    <list default="true" id="b984255c-5888-4bcf-b1a1-8e11597e4fa0" name="Changes" comment="Feladatok külön listázása, dizájn, javasolt edzés html,java, MainController és SecurityConfig módosítása.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admincel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admincel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminfeladat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminfeladat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminfelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminfelhasznalo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updatecel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updatecel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updatefelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updatefelhasznalo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/domain/Edzesterv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/services/FeladatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hu/EdzestervFront/services/FeladatService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/feladat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/feladat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/felhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/felhasznalo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updatecel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updatecel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/adminfelhasznalo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,28 +109,7 @@
       <option name="project" value="LOCAL" />
       <updated>1650224767393</updated>
     </task>
-    <task id="LOCAL-00005" summary="Feladatok sikeres ketté bontása, már csak egyet ír ki">
-      <created>1651065611685</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1651065611685</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Edzesnap, Edzésterv, EdzésnapFeladatok törlése, fölösleges commentek kitrölése">
-      <created>1651074622869</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1651074622869</updated>
-    </task>
-    <task id="LOCAL-00007" summary="html fájlok fölösleges commentjeinek törlése">
-      <created>1651074853565</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1651074853566</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -158,15 +125,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oldalakra kilistázás az adatbázisból gettel" />
     <MESSAGE value="nagy commit mert sok elmaradt" />
     <MESSAGE value="Dizájn és index html módosítása." />
     <MESSAGE value="SecurityConfig, style, index és nav html módosítások." />
-    <MESSAGE value="Feladatok sikeres ketté bontása, már csak egyet ír ki" />
-    <MESSAGE value="Edzesnap, Edzésterv, EdzésnapFeladatok törlése, fölösleges commentek kitrölése" />
-    <MESSAGE value="html fájlok fölösleges commentjeinek törlése" />
-    <option name="LAST_COMMIT_MESSAGE" value="html fájlok fölösleges commentjeinek törlése" />
+    <option name="LAST_COMMIT_MESSAGE" value="SecurityConfig, style, index és nav html módosítások." />
   </component>
 </project>
