@@ -20,7 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Autowired
-    public void configureAuth(AuthenticationManagerBuilder auth){
+    public void configureAuth(AuthenticationManagerBuilder auth){   //felhasználónév: admin, jelszó: asdfg
         try {
             auth.inMemoryAuthentication()
                     .withUser("admin").password("$2a$10$DjI.P92vFenHcKMQBb1nKeHqmOnsL/y/6vX4Dcr4Nxl0JO5UaV5xG").roles("USER", "ADMIN")
